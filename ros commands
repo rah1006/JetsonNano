@@ -1,0 +1,28 @@
+roscore
+
+roslaunch realsense2_camera rs_camera.launch
+
+rviz
+
+rostopic list
+
+rosrun tf static_transform_publisher 0 0 0 0 0 0 1 map my_frame 10
+
+roslaunch realsense2_camera rs_camera.launch enable_infra1:=true enable_infra2:=true
+
+roslaunch realsense2_camera rs_camera.launch unite_imu_method:=linear_interpolation enable_infra1:=true enable_infra2:=true initial_reset:=true
+
+roslaunch realsense2_camera rs_camera.launch filters:=pointcloud
+
+SLAM:
+roslaunch realsense2_camera opensource_tracking.launch enable_infra1:=true enable_infra2:=true initial_reset:=true
+
+
+DEEP LEARNING ROS:
+REMEMBER TO SOURCE DEVEL/SETUP.BASH!
+Video viewer:
+roslaunch ros_deep_learning video_viewer.ros1.launch input:=/dev/video2 output:=display://0
+Imagenet classifier:
+roslaunch ros_deep_learning imagenet.ros1.launch input:=/dev/video2 output:=display://0
+detectnet is an option as well!
+roslaunch ros_deep_learning detectnet.ros1.launch input:=/dev/video2 output:=display://0

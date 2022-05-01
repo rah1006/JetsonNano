@@ -1,0 +1,51 @@
+[INFO] [1650402557.203890]: /listenerRH_2849_1650402548883I heard header:
+  seq: 35569
+  stamp:
+    secs: 1650402557
+    nsecs: 202025426
+  frame_id: ''
+detections:
+  -
+    header:
+      seq: 0
+      stamp:
+        secs: 0
+        nsecs:         0
+      frame_id: ''
+    results:
+      -
+        id: 13
+        score: 0.9951171875
+        pose:
+          pose:
+            position:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+            orientation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+              w: 0.0
+          covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.                                                                                                             0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.                                                                                                             0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    bbox:
+      center:
+        x: 697.65625
+        y: 358.76953125
+        theta: 0.0
+      size_x: 329.6875
+      size_y: 313.9453125
+    source_img:
+      header:
+        seq: 0
+        stamp:
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      height: 0
+      width: 0
+      encoding: ''
+      is_bigendian: 0
+      step: 0
+      data: []
+
